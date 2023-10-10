@@ -1,0 +1,26 @@
+% --- Identification part ---
+\ProvidesPackage{assignment format}
+\usepackage{url}
+% --- Declaration of options ---
+\DeclareOption{english}{%
+  \PassOptionsToPackage{english}{babel}
+  \EinheitName{ }
+  \EinheitInfo{Graduate School of Data Science \\ Seoul National University}
+  \PersonName{Instructor: Dr.Jay-yoon Lee (lee.jayyoon@snu.ac.kr) \\ Head TA: Jonghyun Song (hyeongoon11@snu.ac.kr)}
+%  \PersonInfo{
+%    {\setlength{\tabcolsep}{0mm}
+%      \begin{tabular}{@{}l@{~}l@{}}
+%        \footnotesize{\url{http://etl.snu.ac.kr}}
+%    \end{tabular}
+%    }}
+  \Kurstitel{M3224.000300 Natural Language Processing with Neural Networks}
+  \Semester{Fall 2023}
+}
+
+% --- Execution of options ---
+\ExecuteOptions{english}   % set default
+\ProcessOptions
+
+% --- Package loading
+\RequirePackage{babel}
+
