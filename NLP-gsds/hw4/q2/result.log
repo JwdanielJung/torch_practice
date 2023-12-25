@@ -1,0 +1,102 @@
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 11711, 'epochs': 4, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'dev-output.txt', 'test_out': 'test-output.txt', 'batch_size': 8, 'hidden_dropout_prob': 0.3, 'lr': 2e-05}
+check if your code is running on GPU: cuda
+load 8544 data from data/sst-train.txt
+load 1101 data from data/sst-dev.txt
+step loss : 1.67007
+step loss : 1.58201
+step loss : 1.51613
+step loss : 1.47516
+step loss : 1.41923
+step loss : 1.38550
+step loss : 1.34919
+step loss : 1.32871
+step loss : 1.30914
+step loss : 1.29534
+step loss : 1.28439
+step loss : 1.27562
+step loss : 1.25961
+step loss : 1.24876
+step loss : 1.24272
+step loss : 1.23746
+step loss : 1.23230
+step loss : 1.22778
+step loss : 1.22453
+step loss : 1.21816
+step loss : 1.21173
+step loss : 1.20689
+save the model to sst-finetune-4-2e-05.pt
+Epoch 1: train loss :: 1.204, train acc :: 0.644, dev acc :: 0.521
+step loss : 0.58721
+step loss : 0.84747
+step loss : 0.86479
+step loss : 0.87085
+step loss : 0.88043
+step loss : 0.87498
+step loss : 0.87103
+step loss : 0.87412
+step loss : 0.87284
+step loss : 0.87360
+step loss : 0.87531
+step loss : 0.87830
+step loss : 0.88343
+step loss : 0.87909
+step loss : 0.88055
+step loss : 0.88451
+step loss : 0.88607
+step loss : 0.88390
+step loss : 0.88699
+step loss : 0.88837
+step loss : 0.88742
+step loss : 0.88692
+Epoch 2: train loss :: 0.888, train acc :: 0.770, dev acc :: 0.511
+step loss : 0.59195
+step loss : 0.65779
+step loss : 0.59231
+step loss : 0.57163
+step loss : 0.56861
+step loss : 0.57966
+step loss : 0.58316
+step loss : 0.59521
+step loss : 0.60307
+step loss : 0.60200
+step loss : 0.60110
+step loss : 0.60219
+step loss : 0.59889
+step loss : 0.59603
+step loss : 0.59876
+step loss : 0.60006
+step loss : 0.60204
+step loss : 0.60275
+step loss : 0.60720
+step loss : 0.60717
+step loss : 0.60403
+step loss : 0.60146
+Epoch 3: train loss :: 0.601, train acc :: 0.841, dev acc :: 0.497
+step loss : 0.30700
+step loss : 0.40315
+step loss : 0.39650
+step loss : 0.37233
+step loss : 0.36052
+step loss : 0.35388
+step loss : 0.34235
+step loss : 0.33808
+step loss : 0.34210
+step loss : 0.34421
+step loss : 0.34695
+step loss : 0.34952
+step loss : 0.35466
+step loss : 0.35626
+step loss : 0.35770
+step loss : 0.35699
+step loss : 0.35326
+step loss : 0.34993
+step loss : 0.35002
+step loss : 0.35236
+step loss : 0.35407
+step loss : 0.35519
+Epoch 4: train loss :: 0.355, train acc :: 0.937, dev acc :: 0.516
+load model from sst-finetune-4-2e-05.pt
+load 1101 data from data/sst-dev.txt
+load 2210 data from data/sst-test.txt
+dev acc :: 0.521
+test acc :: 0.530
